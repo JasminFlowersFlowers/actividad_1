@@ -1,0 +1,122 @@
+/* base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #f8d0c2, #e1b6f1);
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: darkmagenta;
+    font-size: 3em;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+}
+
+header hr {
+    border: 2px solid darkmagenta;
+    width: 50%;
+    margin: 10px auto 0 auto;
+}
+
+/* Secciones y artículos */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+article, section {
+    background-color: rgba(255,255,255,0.85);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+article:hover, section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Subtítulos */
+h2 {
+    color: #6b46c1;
+    text-decoration: underline;
+    margin-bottom: 15px;
+}
+
+/* Listas */
+ol, ul {
+    list-style: none;
+    margin-left: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 8px 10px;
+    border-radius: 10px;
+    background-color: #f5e6ff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+li:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Imágenes */
+img {
+    border-radius: 8px;
+    max-width: 100px;
+    height: auto;
+}
+
+article img {
+    max-width: 80px;
+}
+
+section > img {
+    display: block;
+    margin: 15px auto;
+    border-radius: 12px;
+    max-width: 100%;
+}
+
+/* Enlaces */
+a {
+    color: #6b46c1;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+    background-color: rgba(255,255,255,0.85);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
